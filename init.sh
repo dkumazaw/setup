@@ -2,12 +2,17 @@
 # Some configs:
 
 SHELLRC="$HOME/.bashrc"
+VIM_RT="$HOME/.vim_runtime"
 # -----------------------------
 
 # Setup vimrc
 echo 'Set up vim'
-git clone --depth=1 https://github.com/dkumazaw/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+if [ -d "$VIM_RT" ]; then
+    echo 'Vim runtime already exists'
+else
+    git clone --depth=1 https://github.com/dkumazaw/vimrc.git $VIM_RT
+    sh $VIM_RT/install_awesome_vimrc.sh
+fi
 
 # git config
 echo 'Configure git'
