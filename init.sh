@@ -12,15 +12,23 @@ git config --global alias.st status
 
 # Register aliases
 SHELLRC="$HOME/.bashrc"
-echo "alias g='git'" >> $SHELLRC
-echo "alias ll='ls -lah'" >> $SHELLRC
-echo "alias gssh='gcloud compute ssh'" >> $SHELLRC
-echo "alias jl='jupyter lab'" >> $SHELLRC
-echo "alias p='cd ../'" >> $SHELLRC
-echo "alias b='cd -'" >> $SHELLRC
-echo "alias v='vim'" >> $SHELLRC
-echo "alias py3='python3'" >> $SHELLRC
-echo "alias ipy='ipython'" >> $SHELLRC
-echo "alias cl='clear'" >> $SHELLRC
+
+aliasfn() {
+    shorthand=$1
+    original=$2
+
+    echo "alias $shorthand=$original" >> $SHELLRC
+}
+
+aliasfn g 'git'
+aliasfn ll 'ls -lah'
+aliasfn gssh 'gcloud compute ssh'
+aliasfn jl 'jupyter lab'
+aliasfn p 'cd ../'
+aliasfn b 'cd -'
+aliasfn v 'vim'
+aliasfn py3 'python3'
+aliasfn ipy 'ipython'
+aliasfn cl 'clear'
 
 source $SHELLRC
