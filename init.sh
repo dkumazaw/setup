@@ -1,3 +1,10 @@
+# -----------------------------
+# Some configs:
+
+SHELLRC="$HOME/.bashrc"
+# -----------------------------
+
+
 # Setup vimrc
 echo 'Setting up vim'
 git clone --depth=1 https://github.com/dkumazaw/vimrc.git ~/.vim_runtime
@@ -11,7 +18,9 @@ git config --global alias.ci commit
 git config --global alias.st status
 
 # Register aliases
-SHELLRC="$HOME/.bashrc"
+echo 'Register aliases'
+
+echo $'\n' >> $SHELLRC # Line break
 
 aliasfn() {
     shorthand=$1
