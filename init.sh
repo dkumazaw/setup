@@ -17,7 +17,7 @@ aliasfn() {
     shorthand=$1
     original=$2
 
-    echo "alias $shorthand=$original" >> $SHELLRC
+    echo "alias $shorthand='$original'" >> $SHELLRC
 }
 
 aliasfn g 'git'
