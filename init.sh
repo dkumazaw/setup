@@ -36,6 +36,8 @@ aliasfn() {
 aliasfn g 'git'
 aliasfn ll 'ls -lah'
 aliasfn gssh 'gcloud compute ssh'
+aliasfn gstart 'gcloud compute instances start'
+aliasfn gstop 'gcloud compute instances stop'
 aliasfn jl 'jupyter lab'
 aliasfn p 'cd ../'
 aliasfn b 'cd -'
