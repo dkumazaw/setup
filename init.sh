@@ -16,10 +16,19 @@ fi
 
 # git config
 echo 'Configure git'
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
+
+gitalias() {
+    shorthand=$1
+    original=$2
+
+    git config --global alias.$shorthand $original
+}
+
+gitalias a add
+gitalias co checkout
+gitalias br branch
+gitalias ci commit
+gitalias st status
 
 # Register aliases
 echo 'Register aliases'
