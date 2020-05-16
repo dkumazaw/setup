@@ -33,17 +33,26 @@ aliasfn() {
     echo "alias $shorthand='$original'" >> $SHELLRC
 }
 
+# General
 aliasfn g 'git'
 aliasfn ll 'ls -lah'
-aliasfn gssh 'gcloud compute ssh'
-aliasfn gstart 'gcloud compute instances start'
-aliasfn gstop 'gcloud compute instances stop'
-aliasfn jl 'jupyter lab'
 aliasfn p 'cd ../'
 aliasfn b 'cd -'
 aliasfn v 'vim'
+aliasfn cl 'clear'
+
+# GCP
+aliasfn gssh 'gcloud compute ssh'
+aliasfn gstart 'gcloud compute instances start'
+aliasfn gstop 'gcloud compute instances stop'
+
+# python
+aliasfn jl 'jupyter lab'
 aliasfn py3 'python3'
 aliasfn ipy 'ipython'
-aliasfn cl 'clear'
+
+# rust
+aliasfn cr 'cargo run'
+aliasfn ct 'cargo test'
 
 source $SHELLRC
