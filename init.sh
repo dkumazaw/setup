@@ -39,6 +39,7 @@ aliasfn ll 'ls -lah'
 aliasfn p 'cd ../'
 aliasfn b 'cd -'
 aliasfn v 'vim'
+aliasfn src 'source'
 aliasfn cl 'clear'
 
 # GCP
