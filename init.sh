@@ -34,6 +34,7 @@ aliasfn() {
 }
 
 # General
+aliasfn c 'cd'
 aliasfn g 'git'
 aliasfn ll 'ls -lah'
 aliasfn p 'cd ../'
