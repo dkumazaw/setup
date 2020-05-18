@@ -71,6 +71,7 @@ aliasfn ct 'cargo test'
 # git
 aliasfn ga 'git add'
 aliasfn gc 'git commit'
+aliasfn gst 'git status'
 aliasfn gpu 'git push'
 aliasfn gpl 'git pull'
 
