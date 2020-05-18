@@ -29,6 +29,8 @@ gitalias co checkout
 gitalias br branch
 gitalias ci commit
 gitalias st status
+gitalias pu push
+gitalias pl pull
 
 # Register aliases
 echo 'Register aliases'
