@@ -47,6 +47,7 @@ aliasfn() {
 # General
 aliasfn c 'cd'
 aliasfn g 'git'
+aliasfn l 'ls'
 aliasfn ll 'ls -lah'
 aliasfn p 'cd ../'
 aliasfn b 'cd -'
