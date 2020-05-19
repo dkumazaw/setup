@@ -28,6 +28,7 @@ gitalias a add
 gitalias co checkout
 gitalias br branch
 gitalias ci commit
+gitalias di diff
 gitalias st status
 gitalias pu push
 gitalias pl pull
@@ -72,6 +73,8 @@ aliasfn ct 'cargo test'
 # git
 aliasfn ga 'git add'
 aliasfn gc 'git commit'
+aliasfn gci 'git commit'
+aliasfn gdi 'git diff'
 aliasfn gst 'git status'
 aliasfn gpu 'git push'
 aliasfn gpl 'git pull'
