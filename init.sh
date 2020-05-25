@@ -33,6 +33,10 @@ gitalias st status
 gitalias pu push
 gitalias pl pull
 
+# tmux
+echo 'Configure tmux'
+cp ./tmux.conf ~/.tmux.conf
+
 # Register aliases
 echo 'Register aliases'
 
